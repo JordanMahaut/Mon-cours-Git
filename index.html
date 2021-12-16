@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon cours sur Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mon cours sur GIT</h1>
+
+    <section>
+        <h2>Instruction pour GIT</h2>
+        <ul>
+            <li>Installer Git sur internet</li>
+            <li>Ouvrir l'executeur Git Bash</li>
+            <li>Accéder avec le "cd ~" dans le bon répertoire</li>
+            <li>Une fois le code HTML, CSS, JavaScript... Exécuter les commandes ci dessous (Si besoin installer Git-It pour voir l'ordre des commandes)</li>
+        </ul>
+
+        <h2>Instruction sur GitHub</h2>
+        <ul>
+            <li>Cliquez sur "Your repositories" à partir de notre icon en haut à droite</li>
+            <li>Cliquez sur "New" pour créer notre répertoire de dépot</li>
+            <li>Entrée le nom du répertoire et choisir si il est en "Public" ou "Private" puis cliquez sur Create repository</li>
+        </ul>
+    </section>
+    <div>
+        <table>
+            <caption>Les commandes</caption>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Commandes</th>
+                    <th>Signification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Git config</th>
+                    <th>Git config --global user.email (Adresse mail)</th>
+                    <th>On l’utilise pour configurer les préférences de l’utilisateur : son mail, l’algorithme utilisé pour diff, le nom d’utilisateur et le format de fichier etc. Par exemple, la commande suivante peut être utilisée pour définir le mail d’un utilisateur:</th>
+                </tr>
+                <tr>
+                    <th>Git init</th>
+                    <th>Git init</th>
+                    <th>Cette commande est utilisée pour créer un nouveau dépôt GIT</th>
+                </tr>
+                <tr>
+                    <th>Git add</th>
+                    <th>Git add (Nom du fichier dans le dossier local)</th>
+                    <th>La commande git add peut être utilisée pour ajouter des fichiers à l’index. Par exemple, la commande suivante ajoutera un fichier nommé temp.txt dans le répertoire local de l’index <br> (Exemple: Git add index.html)</th>
+                </tr>
+                <tr>
+                    <th>Git commit</th>
+                    <th>Git commit –m “Description du commit”</th>
+                    <th>La commande git commit permet de valider les modifications apportées au HEAD. Notez que tout commit ne se fera pas dans le dépôt distant.</th>
+                </tr>
+                <tr>
+                    <th>Git status</th>
+                    <th>Git status</th>
+                    <th>La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés.</th>
+                </tr>
+                <tr>
+                    <th>Git push</th>
+                    <th>Git push origin master</th>
+                    <th>Git push est une autre commandes GIT de base. Un simple push envoie les modifications locales apportées à la branche principale associée</th>
+                </tr>
+                <tr>
+                    <th>Git checkout</th>
+                    <th>Git checkout <nom-branche></nom-branche></th>
+                    <th>La commande git checkout peut être utilisée pour basculer des branches entre elles.</th>
+                </tr>
+                <tr>
+                    <th>Git remote</th>
+                    <th>
+                        <ul>
+                            <li>Git remote –v</li>
+                            <li>Git remote add origin (lien du clone du GitHub en HTTPS)</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul>
+                            <li>Cette commande remote permet à un utilisateur de se connecter à un dépôt distant.</li>
+                            <li>Cette commande permet à l’utilisateur de connecter le dépôt local à un serveur distant.</li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Git branch</th>
+                    <th>
+                        <ul>
+                            <li>Git branch</li>
+                            <li>Git branch -d (nom-branch)</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul>
+                            <li>La commande git branch peut être utilisée pour répertorier, créer ou supprimer des branches. Pour répertorier toutes les branches présentes dans le dépôt, utilisez:</li>
+                            <li>Pour supprimer une branche:</li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Git pull</th>
+                    <th>Git pull</th>
+                    <th>Pour fusionner toutes les modifications présentes sur le dépôt distant dans le répertoire de travail local, la commande pull est utilisée.</th>
+                </tr>
+                <tr>
+                    <th>Git merge</th>
+                    <th>Git merge (nom-branche)</th>
+                    <th>La commande git merge est utilisée pour fusionner une branche dans la branche active.</th>
+                </tr>
+                <tr>
+                    <th>Git diff</th>
+                    <th>
+                        <ul>
+                            <li>Git diff --base (nom-fichier)</li>
+                            <li>Git diff (branche-source) (branche-cible)</li>
+                            <li>Git diff</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul>
+                            <li>La commande git diff permet de lister les conflits. Pour visualiser les conflits d’un fichier, utilisez</li>
+                            <li>La commande suivante est utilisée pour afficher les conflits entre les branches à fusionner avant de les fusionner:</li>
+                            <li>Pour simplement énumérer tous les conflits actuels, utilisez:</li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Git reflog</th>
+                    <th>Git reflog</th>
+                    <th>Permet de revoir nos commits effectués</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
